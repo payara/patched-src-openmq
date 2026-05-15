@@ -24,7 +24,7 @@
     <parent>
         <groupId>org.glassfish.mq</groupId>
         <artifactId>mq</artifactId>
-        <version>6.8.0.payara-p3</version>
+        <version>6.8.0.payara-p4-SNAPSHOT</version>
     </parent>
 
     <artifactId>mq-direct</artifactId>
