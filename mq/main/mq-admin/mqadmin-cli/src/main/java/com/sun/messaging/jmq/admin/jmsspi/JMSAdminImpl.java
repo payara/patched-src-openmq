@@ -30,6 +30,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.Enumeration;
 import java.util.Iterator;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Properties;
 import java.util.Vector;
@@ -624,7 +625,7 @@ public class JMSAdminImpl implements JMSAdmin, ExceptionListener {
         if (!argsOnly) {
             String iMQBrokerPath;
 
-            if (java.io.File.separator.equals("\\")) {
+            if (System.getProperty("os.name").toLowerCase(Locale.ROOT).startsWith("windows")) {
                 // Windows path - .bat files require cmd.exe /c to execute from Java
                 // <iMQHome>\imqbrokerd.bat
                 v.add("cmd.exe");
@@ -909,7 +910,7 @@ public class JMSAdminImpl implements JMSAdmin, ExceptionListener {
         int exitCode = 0;
         boolean interrupted = false;
 
-        if (java.io.File.separator.equals("\\")) {
+        if (System.getProperty("os.name").toLowerCase(Locale.ROOT).startsWith("windows")) {
             // Windows path - .bat files require cmd.exe /c to execute from Java
             // <mqBinDir>\imqbrokerd.bat
             iMQBrokerPath = mqBinDir + java.io.File.separator + "imqbrokerd.bat";
@@ -940,7 +941,7 @@ public class JMSAdminImpl implements JMSAdmin, ExceptionListener {
         //
 
         Vector v = new Vector();
-        if (java.io.File.separator.equals("\\")) {
+        if (System.getProperty("os.name").toLowerCase(Locale.ROOT).startsWith("windows")) {
             v.add("cmd.exe");
             v.add("/c");
         }
@@ -1022,7 +1023,7 @@ public class JMSAdminImpl implements JMSAdmin, ExceptionListener {
         int exitCode = 0;
         boolean interrupted = false;
 
-        if (java.io.File.separator.equals("\\")) {
+        if (System.getProperty("os.name").toLowerCase(Locale.ROOT).startsWith("windows")) {
             // Windows path - .bat files require cmd.exe /c to execute from Java
             // <mqBinDir>\imqbrokerd.bat
             iMQBrokerPath = mqBinDir + java.io.File.separator + "imqbrokerd.bat";
@@ -1053,7 +1054,7 @@ public class JMSAdminImpl implements JMSAdmin, ExceptionListener {
         //
 
         Vector v = new Vector();
-        if (java.io.File.separator.equals("\\")) {
+        if (System.getProperty("os.name").toLowerCase(Locale.ROOT).startsWith("windows")) {
             v.add("cmd.exe");
             v.add("/c");
         }
