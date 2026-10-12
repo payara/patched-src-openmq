@@ -5,3 +5,10 @@ pom.xml.versionsBackup
 ### Other ###
 *.class
 
+### IDE ###
+.idea/
+*.iml
+
+### Tooling ###
+.claude/
+
