@@ -25,7 +25,7 @@
     <parent>
         <groupId>org.glassfish.mq</groupId>
         <artifactId>project</artifactId>
-        <version>5.1.4.payara-p8-SNAPSHOT</version>
+        <version>5.1.4.payara-p9-SNAPSHOT</version>
     </parent>
 
     <artifactId>mq</artifactId>
@@ -67,7 +67,7 @@
         <glassfishbuild.version>3.2.4</glassfishbuild.version>
         <glassfish.version>5.1.0-RC2</glassfish.version>
         
-        <grizzly.version>2.4.4</grizzly.version>
+        <grizzly.version>2.4.4.payara-p12</grizzly.version>
 
         <!-- begin of websocket dependencies -->
         <json.version>1.1.5</json.version>
