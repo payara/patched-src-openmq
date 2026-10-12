@@ -25,7 +25,7 @@
     <parent>
         <groupId>org.glassfish.mq</groupId>
         <artifactId>project</artifactId>
-        <version>6.5.1.payara-p4-SNAPSHOT</version>
+        <version>6.5.1.payara-p5-SNAPSHOT</version>
         <relativePath>../..</relativePath>
     </parent>
 
@@ -80,7 +80,7 @@
         <hk2.version>3.1.0</hk2.version>
         <jakarta-jms.version>3.1.0</jakarta-jms.version>
 
-        <grizzly.version>4.0.2</grizzly.version>
+        <grizzly.version>4.0.2.payara-p3</grizzly.version>
 
         <junit.version>5.10.2</junit.version>
         <assertj.version>3.26.0</assertj.version>
